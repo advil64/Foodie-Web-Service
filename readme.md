@@ -34,7 +34,7 @@ BUSINESS_MODEL = api.model("Business", {
 
 **Q:** A short description on how to start your web service
 
-**A:** The first thing that you must do is install the packages. You can do this by first running *pipenv shell* then running *pipenv install* which will install all of the packages in the Pipfile file in this folder.
+**A:** The first thing that you must do is install the packages. You can do this by first running `pipenv shell` then running `pipenv install` which will install all of the packages in the Pipfile file in this folder.
 
 *(If you're using VSCode)* I've included the .vscode file, you should simply be able to go to the debugging panel and press the green play button which says Python: Flask.
 
