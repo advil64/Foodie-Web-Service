@@ -38,6 +38,14 @@ BUSINESS_MODEL = api.model("Business", {
 
 *(If you're using VSCode)* I've included the .vscode file, you should simply be able to go to the debugging panel and press the green play button which says Python: Flask.
 
-*(If you're not)* First cd to this folder. Next you need to tell flask which is the main file. You can do this by copying the following command into the terminal: `export FLASK_APP=main.py`. Next, you can simply run the following command in your terminal after you `python -m flask` and the app should be visible if you hit `localhost:5000/restaurants`
+*(If you're not)* First cd to this folder. Next you need to tell flask which is the main file. You can do this by copying the following command into the terminal: `export FLASK_APP=main.py`. Next, you can simply run the following command in your terminal after you `python -m flask run` and the app should be visible if you hit `localhost:5000/restaurants`
 
-A short description of where you placed your Geocod.io / Yelp API key within your code. (This way I can replace it with my own if I need to)
+**Q:** A short description of where you placed your Geocod.io / Yelp API key within your code. (This way I can replace it with my own if I need to)
+
+**A:** Just create a .env file in this folder with the following information:
+
+```
+geocode-key=
+yelp-client-id=
+yelp-key=
+```

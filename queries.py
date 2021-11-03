@@ -7,7 +7,7 @@ from flask import abort
 pp = pprint.PrettyPrinter(width=41, compact=True)
 
 def get_geocode(address):
-    if address is None or address.strip() is "":
+    if address is None or address.strip() == "":
         abort(400, "Invalid address")
 
     p = {'q': address, 'api_key': os.environ.get("geocode-key")}
