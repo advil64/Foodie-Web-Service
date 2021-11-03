@@ -40,6 +40,14 @@ BUSINESS_MODEL = api.model("Business", {
 
 *(If you're not)* First cd to this folder. Next you need to tell flask which is the main file. You can do this by copying the following command into the terminal: `export FLASK_APP=main.py`. Next, you can simply run the following command in your terminal after you `python -m flask run` and the app should be visible if you hit `localhost:5000/restaurants`
 
+An example query would be as follows:
+
+```curl
+curl -X 'GET' \
+  'http://localhost:5000/restaurants?Address=40%20College%20Ave%2C%20New%20Brunswick%2C%20NJ%2008901' \
+  -H 'accept: application/json'
+```
+
 **Q:** A short description of where you placed your Geocod.io / Yelp API key within your code. (This way I can replace it with my own if I need to)
 
 **A:** Just create a .env file in this folder with the following information:
